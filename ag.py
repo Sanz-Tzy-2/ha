@@ -431,7 +431,7 @@ def moch_yayan():
     pepek = input('\n [%s*%s] menu : '%(H,N))
     if pepek == '':
         print('\n %s[%s×%s]\x1b[1;91m jangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
-     elif pepek in['1','01']:
+    elif pepek in['1','01']:
             log_igeh()
             menu_igeh()
     elif pepek in['2','02']:
