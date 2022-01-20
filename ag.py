@@ -63,11 +63,12 @@ def jalan(z):
         time.sleep(0.03)
 def logo():
     print("""%s
-    _________ __ 
-   / ____/ (_) /____
-  / __/ / / / __/ _ \ 
- / /___/ / / /_/  __/
-/_____/_/_/\__/\___/ 
+    \x1b[1;96m_________ __
+   \x1b[1;96m/ ____/ (_) /____  | \x1b[1;97mCodeBy \x1b[1;96mSanz\x1b[1;97m-\x1b[1;96mTzy
+  \x1b[1;96m/ __/ / / / __/ _ \ | \x1b[1;97mGithub \x1b[1;96m: \x1b[1;97mgithub.com/Sanz-Tzy
+ \x1b[1;96m/ /___/ / / /_/  __/ | \x1b[1;97mFb \x1b[1;96m: \x1b[1;97mBintang Tzy
+\x1b[1;96m/_____/_/_/\__/\___/  | \x1b[1;97mlink Fb \x1b[1;96m: \x1b[1;97mhttps://www.facebook.com/bintangt.zy.92
+\x1b[1;97mMulti Brute Force
 \033[92;1m----------------------------------------------------------
 \033[97;1m \033[92;1mCreator  \033[97;1m: \033[93;1mSanz-Tzy \033[97;1mX \033[93;1mHaris Ganz
 \033[97;1m \033[92;1mWhatsApp \033[97;1m: \033[93;1m083801xxxxx
